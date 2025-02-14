@@ -88,7 +88,8 @@ export function EmployeeTable({
         {employees.map((emp) => (
           <div
             key={emp.id}
-            className="bg-white p-4 rounded-lg shadow-md border border-gray-200"
+            className="bg-white p-4 rounded-lg shadow-md border border-gray-200 cursor-pointer"
+            onClick={() =>window.location.href = `/employees/${emp.id}` }
           >
             <div className="flex flex-col space-y-2">
               <div className="flex justify-between">

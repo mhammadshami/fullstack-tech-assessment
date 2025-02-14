@@ -69,20 +69,7 @@ const TimesheetsPage: React.FC = () => {
 
   return (
     <div className="flex min-h-screen bg-gray-100">
-      <button
-        className="fixed top-4 left-4 z-50 p-2 bg-indigo-600 text-white rounded-lg md:hidden focus:outline-none"
-        onClick={toggleSidebar}
-      >
-        {isSidebarOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-      </button>
-
-      <div
-        className={`fixed inset-y-0 left-0 z-40 w-64 bg-gradient-to-b from-indigo-900 to-indigo-700 text-white shadow-lg transform transition-transform duration-300 ease-in-out ${
-          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } md:translate-x-0 md:relative`}
-      >
-        <Sidebar sidebarLinks={sidebarLinks} />
-      </div>
+      <Sidebar sidebarLinks={sidebarLinks} />
 
       <main className="flex-1 p-4 md:p-6">
         {/* if no timesheets*/}
