@@ -1,0 +1,20 @@
+.calendar-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .calendar-container {
+    font-size: 14px;
+  }
+
+  .calendar-header,
+  .calendar-event {
+    padding: 5px;
+  }
+
+  .calendar-event {
+    font-size: 12px;
+  }
+}
